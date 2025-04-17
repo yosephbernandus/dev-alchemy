@@ -1,0 +1,36 @@
+version: '3'
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    network_mode: "host"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+  postgres-exporter:
+    image: prometheuscommunity/postgres-exporter:latest
+    network_mode: "host"
+    environment:
+      DATA_SOURCE_NAME: "postgresql://user:yourpassword@localhost:5432/julodb?sslmode=disable"
+
+  node-exporter:
+    image: prom/node-exporter:latest
+    network_mode: "host"
+    command:
+      - '--path.procfs=/host/proc'
+      - '--path.sysfs=/host/sys'
+      - '--collector.filesystem.ignored-mount-points=^/(sys|proc|dev|host|etc)($$|/)'
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+
+  pushgateway:
+    image: prom/pushgateway:latest
+    network_mode: "host"
+
+  grafana:
+    image: grafana/grafana:latest
+    network_mode: "host"
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: admin
+
