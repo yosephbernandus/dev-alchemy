@@ -52,8 +52,8 @@ Each container runs with:
 ## Output Files
 
 - `consolidated_results.json` - Raw benchmark data
-- `benchmark_summary.csv` - Summary table
-- `ulid_benchmark_comparison.png` - Performance charts
+- `benchmark_summary.csv` - Summary table  
+- `ulid_benchmark_comparison.png` - Performance charts (shown above)
 
 ## Understanding Results
 
@@ -86,12 +86,14 @@ Each container runs with:
 
 ### Latest Benchmark Results (Python 3.8, 512MB RAM, 2 CPU cores)
 
+![Docker Benchmark Results](ulid_benchmark_comparison.png)
+
 | Library | Generation | Parsing | Overall Score |
 |---------|------------|---------|---------------|
-| **ulid-python** | 6,106,632 ops/sec (100%) | 4,736,487 ops/sec (100%) | **100%** |
-| **py-ulid** | 1,739,338 ops/sec (28.5%) | 0 ops/sec (0%) | 14.2% |
-| **ulid-py** | 687,065 ops/sec (11.3%) | 223,203 ops/sec (4.7%) | 8% |
-| **python-ulid** | 164,448 ops/sec (2.7%) | 202,011 ops/sec (4.3%) | 3.5% |
+| ulid-python | 6,396,713 ops/sec (100%) | 4,801,302 ops/sec (100%) | 100% |
+| py-ulid | 1,622,025 ops/sec (25.4%) | 0 ops/sec (0%) | 12.7% |
+| ulid-py | 706,341 ops/sec (11.0%) | 228,049 ops/sec (4.8%) | 7.9% |
+| python-ulid | 152,631 ops/sec (2.4%) | 192,194 ops/sec (4.0%) | 3.2% |
 
 
 ## Detailed Parameter Reference

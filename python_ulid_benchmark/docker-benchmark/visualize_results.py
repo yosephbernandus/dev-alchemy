@@ -141,7 +141,7 @@ def create_performance_chart(df: pd.DataFrame, benchmark_info: Dict):
     # Save the chart
     output_file = 'ulid_benchmark_comparison.png'
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
-    print(f"📊 Chart saved as: {output_file}")
+    print(f"Chart saved as: {output_file}")
     
     return fig
 
@@ -205,7 +205,7 @@ def main():
     """Main visualization function."""
     try:
         # Load results
-        print("📊 Loading benchmark results...")
+        print("Loading benchmark results...")
         data = load_results()
         
         benchmark_info = data['benchmark_info']
@@ -214,10 +214,10 @@ def main():
         df = prepare_dataframe(data)
         
         if df.empty:
-            print("❌ No valid results found to visualize.")
+            print("No valid results found to visualize.")
             return 1
         
-        print(f"📈 Processing results for {len(df['Library'].unique())} libraries...")
+        print(f"Processing results for {len(df['Library'].unique())} libraries...")
         
         # Create visualizations
         fig = create_performance_chart(df, benchmark_info)
@@ -229,18 +229,18 @@ def main():
         # Save summary to CSV
         summary_file = 'benchmark_summary.csv'
         summary.to_csv(summary_file)
-        print(f"\n📋 Summary saved to: {summary_file}")
+        print(f"\nSummary saved to: {summary_file}")
         
-        print("\n🎉 Visualization complete!")
+        print("\nVisualization complete!")
         print("Check 'ulid_benchmark_comparison.png' for the charts.")
         
         return 0
         
     except FileNotFoundError as e:
-        print(f"❌ {e}")
+        print(f"{e}")
         return 1
     except Exception as e:
-        print(f"❌ Error creating visualization: {e}")
+        print(f"Error creating visualization: {e}")
         return 1
 
 if __name__ == "__main__":
