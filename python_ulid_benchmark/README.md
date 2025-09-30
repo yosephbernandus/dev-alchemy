@@ -44,14 +44,12 @@ The benchmark results show performance across different ULID libraries on an 8-c
 
 ### Key Results Summary
 
-| Rank | Library | Generation (M ops/sec) | Parsing (M ops/sec) | Overall Score |
-|------|---------|------------------------|---------------------|---------------|
-| 1 | ulid-python | 7.57 | 6.59 | 100.0% |
-| 2 | py-ulid | 2.51 | 0.00 | 16.6% |
-| 3 | ulid-py | 0.75 | 0.28 | 7.0% |
-| 4 | python-ulid | 0.26 | 0.22 | 3.4% |
-
-**ulid-python** demonstrates exceptional performance with **30x faster** generation than python-ulid and complete parsing functionality.
+| Rank | Library | Generation (ops/sec) | Parsing (ops/sec) | Overall Score |
+|------|---------|---------------------|-------------------|---------------|
+| 1 | ulid-python | 7,853,467 | 7,065,304 | 100% |
+| 2 | py-ulid | 2,513,552 | 0 | 18% |
+| 3 | ulid-py | 747,632 | 276,193 | 7% |
+| 4 | python-ulid | 257,157 | 218,956 | 4% |
 
 ## Available Options
 
