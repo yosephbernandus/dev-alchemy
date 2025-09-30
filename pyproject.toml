@@ -7,3 +7,6 @@ requires-python = ">=3.12"
 dependencies = [
     "redis>=6.2.0",
 ]
+
+[tool.uv.workspace]
+members = ["python_ulid_benchmark"]

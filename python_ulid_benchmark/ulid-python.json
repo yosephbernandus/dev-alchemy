@@ -1,0 +1,33 @@
+{
+  "library": "ulid-python",
+  "generation": {
+    "success": true,
+    "ops_per_sec": 7853467.221554159,
+    "mean_time": 1.273322943598032e-07,
+    "median_time": 1.210719347000122e-07,
+    "min_time": 1.1199153959751129e-07,
+    "max_time": 1.5058089047670364e-05,
+    "total_iterations": 100000,
+    "baseline_memory_mb": 21.2421875,
+    "peak_memory_mb": 25.20703125,
+    "memory_overhead_mb": 3.96484375
+  },
+  "parsing": {
+    "success": true,
+    "ops_per_sec": 7070982.596821092,
+    "mean_time": 1.4142306055873632e-07,
+    "median_time": 1.3399403542280197e-07,
+    "min_time": 1.2200325727462769e-07,
+    "max_time": 1.4189979992806911e-05,
+    "total_iterations": 100000,
+    "baseline_memory_mb": 24.609375,
+    "peak_memory_mb": 25.89453125,
+    "memory_overhead_mb": 1.28515625
+  },
+  "system_info": {
+    "python_version": "3.12.3 (main, Apr 15 2024, 18:25:56) [Clang 17.0.6 ]",
+    "available_memory_mb": 4052.55078125,
+    "cpu_cores": 8,
+    "cpu_percent": 3.3
+  }
+}

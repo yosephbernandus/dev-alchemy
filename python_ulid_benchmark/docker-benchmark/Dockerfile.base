@@ -1,0 +1,14 @@
+# Base Docker image for ULID benchmarks
+FROM python:3.11-slim
+
+# Set working directory
+WORKDIR /benchmark
+
+# Install minimal dependencies
+RUN pip install --no-cache-dir psutil
+
+# Copy benchmark runner script
+COPY benchmark_runner.py /benchmark/
+
+# Default command
+CMD ["python", "benchmark_runner.py"]

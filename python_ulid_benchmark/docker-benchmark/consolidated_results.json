@@ -1,0 +1,137 @@
+{
+  "benchmark_info": {
+    "memory_limit": "512m",
+    "cpu_limit": "2",
+    "timestamp": 1759235350.4453552
+  },
+  "results": [
+    {
+      "library": "ulid-python",
+      "generation": {
+        "success": true,
+        "ops_per_sec": 6396712.705054646,
+        "mean_time": 1.5633029746823014e-07,
+        "median_time": 1.5203841030597687e-07,
+        "min_time": 1.3899989426136017e-07,
+        "max_time": 5.5154901929199696e-05,
+        "total_iterations": 100000,
+        "baseline_memory_mb": 12.6640625,
+        "peak_memory_mb": 16.67578125,
+        "memory_overhead_mb": 4.01171875
+      },
+      "parsing": {
+        "success": true,
+        "ops_per_sec": 4801301.859157047,
+        "mean_time": 2.082768443506211e-07,
+        "median_time": 1.9499566406011581e-07,
+        "min_time": 1.7601996660232544e-07,
+        "max_time": 1.4369958080351353e-05,
+        "total_iterations": 100000,
+        "baseline_memory_mb": 13.875,
+        "peak_memory_mb": 16.70703125,
+        "memory_overhead_mb": 2.83203125
+      },
+      "system_info": {
+        "python_version": "3.8.20 (default, Sep 27 2024, 06:05:23) \n[GCC 12.2.0]",
+        "available_memory_mb": 3698.32421875,
+        "cpu_cores": 8,
+        "cpu_percent": 2.9
+      }
+    },
+    {
+      "library": "python-ulid",
+      "generation": {
+        "success": true,
+        "ops_per_sec": 152631.4306512582,
+        "mean_time": 6.551730503560975e-06,
+        "median_time": 6.405985914170742e-06,
+        "min_time": 5.441019311547279e-06,
+        "max_time": 0.0002416169736534357,
+        "total_iterations": 100000,
+        "baseline_memory_mb": 14.1015625,
+        "peak_memory_mb": 18.03515625,
+        "memory_overhead_mb": 3.93359375
+      },
+      "parsing": {
+        "success": true,
+        "ops_per_sec": 192194.26721671145,
+        "mean_time": 5.203068824484944e-06,
+        "median_time": 5.153939127922058e-06,
+        "min_time": 4.814937710762024e-06,
+        "max_time": 9.226996917277575e-05,
+        "total_iterations": 100000,
+        "baseline_memory_mb": 14.59375,
+        "peak_memory_mb": 17.9140625,
+        "memory_overhead_mb": 3.3203125
+      },
+      "system_info": {
+        "python_version": "3.8.20 (default, Sep 27 2024, 06:05:23) \n[GCC 12.2.0]",
+        "available_memory_mb": 3690.64453125,
+        "cpu_cores": 8,
+        "cpu_percent": 3.2
+      }
+    },
+    {
+      "library": "py-ulid",
+      "generation": {
+        "success": true,
+        "ops_per_sec": 1622025.3979388261,
+        "mean_time": 6.165131577290595e-07,
+        "median_time": 6.109476089477539e-07,
+        "min_time": 5.370238795876503e-07,
+        "max_time": 2.7474015951156616e-05,
+        "total_iterations": 100000,
+        "baseline_memory_mb": 15.00390625,
+        "peak_memory_mb": 18.92578125,
+        "memory_overhead_mb": 3.921875
+      },
+      "parsing": {
+        "success": false,
+        "error": "No successful iterations",
+        "ops_per_sec": 0,
+        "mean_time": 0,
+        "median_time": 0,
+        "memory_usage": 0
+      },
+      "system_info": {
+        "python_version": "3.8.20 (default, Sep 27 2024, 06:05:23) \n[GCC 12.2.0]",
+        "available_memory_mb": 3691.0390625,
+        "cpu_cores": 8,
+        "cpu_percent": 3.5
+      }
+    },
+    {
+      "library": "ulid-py",
+      "generation": {
+        "success": true,
+        "ops_per_sec": 706341.6269131379,
+        "mean_time": 1.4157455286476762e-06,
+        "median_time": 1.3739336282014847e-06,
+        "min_time": 1.2320233508944511e-06,
+        "max_time": 0.000603343010880053,
+        "total_iterations": 100000,
+        "baseline_memory_mb": 11.91015625,
+        "peak_memory_mb": 15.83203125,
+        "memory_overhead_mb": 3.921875
+      },
+      "parsing": {
+        "success": true,
+        "ops_per_sec": 228048.66117721645,
+        "mean_time": 4.385029032127931e-06,
+        "median_time": 4.319008439779282e-06,
+        "min_time": 4.038098268210888e-06,
+        "max_time": 0.00045758101623505354,
+        "total_iterations": 100000,
+        "baseline_memory_mb": 12.6640625,
+        "peak_memory_mb": 15.71875,
+        "memory_overhead_mb": 3.0546875
+      },
+      "system_info": {
+        "python_version": "3.8.20 (default, Sep 27 2024, 06:05:23) \n[GCC 12.2.0]",
+        "available_memory_mb": 3687.390625,
+        "cpu_cores": 8,
+        "cpu_percent": 2.1
+      }
+    }
+  ]
+}

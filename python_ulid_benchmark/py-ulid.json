@@ -1,0 +1,22 @@
+{
+  "library": "py-ulid",
+  "generation": {
+    "success": true,
+    "ops_per_sec": 2515993.210410283,
+    "mean_time": 3.9745735237374904e-07,
+    "median_time": 3.8708094507455826e-07,
+    "min_time": 3.400491550564766e-07,
+    "max_time": 1.6439007595181465e-05,
+    "total_iterations": 100000,
+    "baseline_memory_mb": 19.875,
+    "peak_memory_mb": 25.0703125,
+    "memory_overhead_mb": 5.1953125
+  },
+  "parsing": {},
+  "system_info": {
+    "python_version": "3.12.3 (main, Apr 15 2024, 18:25:56) [Clang 17.0.6 ]",
+    "available_memory_mb": 4060.41796875,
+    "cpu_cores": 8,
+    "cpu_percent": 6.7
+  }
+}

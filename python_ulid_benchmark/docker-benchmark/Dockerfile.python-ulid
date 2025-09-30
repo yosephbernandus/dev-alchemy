@@ -1,0 +1,16 @@
+FROM python:3.8-slim
+
+WORKDIR /benchmark
+
+# Install minimal dependencies
+RUN pip install --no-cache-dir psutil
+
+# Install python-ulid and typing_extensions
+RUN pip install --no-cache-dir python-ulid typing_extensions
+
+# Copy benchmark runner (from current directory)
+COPY ./benchmark_runner.py /benchmark/benchmark_runner.py
+
+ENV BENCHMARK_LIBRARY=python-ulid
+
+CMD ["python", "benchmark_runner.py"]
